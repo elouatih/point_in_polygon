@@ -1,0 +1,38 @@
+**************** Détection d'inclusions de polygones ***************************
+A partir d'un fichier d'extension  .poly, une liste de polygones est générée.
+Le but est de détecter l'inclusion de chaque polygone dans un autre.
+
+Les fichiers principaux ********************************************************
+
+main.py : Fichier principal qui affiche une liste détectant l'inclusion de
+          polygones
+comparaison.py : Fichier comparaison des trois algorithmes
+	         pour un ensemble donné de polygones 
+
+Fichiers générateurs et traçage de courbes *************************************
+
+performances_algorithmes.py : Trace pour chaque algorithme le temps d'exécution
+			      en fonction du nombre de sommets du polygone
+generateur_inclusions.py : Trace les courbes du temps d'execution pour l'algorithme
+			   de detections d'inclusions utilisant les trois algo.
+
+Les fichiers des algorithmes ***************************************************
+
+cutting_triangle.py, quadrant_product.py, crossing_number.py
+
+Ces fichiers renferment trois algo détectant l'inclusion d'un point donné
+dans un polygone donné.
+
+Les fichiers auxiliaires - niveau 1 ********************************************
+
+Ces fichiers sont renfermés dans un dossier geo contenant des classes
+d'objets géométriques:
+point.py : Classe de point modifiée pour simplifier. On a ajouté self.x et self.y
+segment.py : Classe de segment en ajoutant de nouvelles méthodes
+polygon.py : Classe de polygone en ajoutant de nouvelles méthodes
+quadrant.py : Classe de quadrant
+vecteur.py : Classe de vecteur avec de nouvelles méthodes
+
+Les tests d'inclusion **********************************************************
+
+Les tests utilisés sont renfermés dans le dossier tests_inclusions.
